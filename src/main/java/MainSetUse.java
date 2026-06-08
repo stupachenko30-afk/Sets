@@ -1,3 +1,5 @@
+import java.util.Iterator;
+import java.util.Set;
 import java.util.TreeSet;
 
 public class MainSetUse {
@@ -8,6 +10,7 @@ public class MainSetUse {
         printWorldsReverseOrder(s2);
     }
     public static void printWorldsReverseOrder(String s){
+        ComparatorStringReverse comp = new ComparatorStringReverse();
 
         TreeSet<String> set = new TreeSet<>();
         String[] ar = s.split(" ");
@@ -15,10 +18,28 @@ public class MainSetUse {
             set.add(st);
 
         }
-         Object[] arr = set.toArray();
-        for (int i = arr.length-1;i>=0; i--){
-            System.out.println(arr[i]);
+
+        Set<String> rset = set.descendingSet();
+        for ( String str: rset){
+            System.out.println(str);
         }
+
+//        Iterator<String> iter  = set.descendingIterator();
+//        while (iter.hasNext() == true){
+//            System.out.println(iter.next());
+//        }
+
+//        for (String str: set){
+//            System.out.println(str);
+//        }
+
+
+
+        ////////////////////////////////////////////////
+//         Object[] arr = set.toArray();
+//        for (int i = arr.length-1;i>=0; i--){
+//            System.out.println(arr[i]);
+//        }
 
     }
     /*

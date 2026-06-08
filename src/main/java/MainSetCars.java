@@ -15,6 +15,7 @@ public class MainSetCars {
                 Car c7 = new Car("Ford Focus", 2017, 1007);
                 Car c8 = new Car("Skoda Octavia", 2023, 1005);
                 Car c9 = new Car("BMW X5", 2020, 1020);
+                Car c10 = new Car("Skoda Octavia", 2023, 1020);
 
                 LinkedHashSet<Car> cset = new LinkedHashSet<>();
                 cset.add(c1);
@@ -26,6 +27,7 @@ public class MainSetCars {
                 cset.add(c7);
                 cset.add(c8);
                 cset.add(c9);
+                cset.add(c10);
 
                 printCarSet(cset);
 
@@ -40,6 +42,7 @@ public class MainSetCars {
         tset.add(c7);
         tset.add(c8);
         tset.add(c9);
+        tset.add(c10);
         printCarSet(tset);
 
 

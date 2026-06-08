@@ -48,11 +48,10 @@ public class Car implements Comparable<Car>  {
     }
 
     @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-
-        Car car = (Car) o;
+    public boolean equals(Object other) {
+        if (this == other) return true;
+        if (other == null || getClass() != other.getClass()) return false;
+        Car car = (Car) other;
         return Objects.equals(model, car.model);
     }
 

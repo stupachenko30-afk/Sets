@@ -1,3 +1,4 @@
+import java.util.Arrays;
 import java.util.LinkedHashSet;
 import java.util.Set;
 import java.util.TreeSet;
@@ -15,7 +16,7 @@ public class MainSetCars {
                 Car c7 = new Car("Ford Focus", 2017, 1007);
                 Car c8 = new Car("Skoda Octavia", 2023, 1005);
                 Car c9 = new Car("BMW X5", 2020, 1020);
-                Car c10 = new Car("Skoda Octavia", 2023, 1020);
+                Car c10 = new Car("Skoda Octavia", 2023, 1001);
 
                 LinkedHashSet<Car> cset = new LinkedHashSet<>();
                 cset.add(c1);
@@ -56,3 +57,42 @@ public class MainSetCars {
         System.out.println("*******************************");
     }
 }
+//import java.util.Arrays;
+//import java.util.LinkedHashSet;
+//import java.util.Set;
+//import java.util.TreeSet;
+//
+//public class MainCars {
+//    public static void main(String[] args) {
+//        Car[] cars = {
+//                new Car("Toyota Corolla", 2020, 1001),
+//                new Car("Honda Civic", 2019, 1002),
+//                new Car("Ford Focus", 2018, 1003),
+//                new Car("Volkswagen Golf", 2021, 1004),
+//                new Car("BMW 3 Series", 2022, 1005),
+//                new Car("Audi A4", 2021, 1006),
+//                new Car("Mercedes C-Class", 2023, 1007),
+//                new Car("Hyundai Elantra", 2020, 1008),
+//                new Car("Kia Sportage", 2022, 1009),
+//                new Car("Nissan Qashqai", 2024, 1010),
+//                new Car("Nissan Qashqai", 2024, 1010),
+//                new Car("Nissan Qashqai", 2024, 1011)
+//        };
+//
+//        LinkedHashSet<Car> linkedCars = new LinkedHashSet<>();
+//        linkedCars.addAll(Arrays.asList(cars));
+//
+//        printCars(linkedCars);
+//
+//        TreeSet<Car> treeCar = new TreeSet<>(Arrays.asList(cars));
+//        printCars(treeCar);
+//
+//    }
+//
+//    private static void printCars(Set<Car> linkedCars) {
+//        for(Car c : linkedCars) {
+//            System.out.println(c);
+//        }
+//        System.out.println("*******************************************");
+//    }
+//}

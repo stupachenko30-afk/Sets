@@ -62,6 +62,6 @@ public class Car implements Comparable<Car>  {
 
     @Override
     public int compareTo(Car other) {
-        return Integer.compare(this.regNumer, other.regNumer);
+        return this.model.compareToIgnoreCase(other.model) ;
     }
 }
